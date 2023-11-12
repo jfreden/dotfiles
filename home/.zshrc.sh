@@ -1,7 +1,7 @@
 #!/usr/bin/env zsh
 
 curr="$pm/dotfiles"
-
+alias chrome="/Applications/Google\\ \\Chrome.app/Contents/MacOS/Google\\ \\Chrome"
 # Load main files.
 # To benchmark startup: brew install coreutils, uncomment lines
 # echo "Load start\t" $(gdate "+%s-%N")
@@ -394,3 +394,20 @@ alias ctl='systemctl'
 function nginx-edit() {
   sudo vim /etc/nginx/sites-available
 }
+eval "$(/opt/dev/venv/bin/dev-bare init bash)"
+eval "$(/opt/dev/venv/bin/dev-bare init zsh)"
+eval "$(shadowenv init zsh)"
+source ~/.iterm2_shell_integration.zsh
+
+
+# pnpm
+export PNPM_HOME="/Users/freden/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+#
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"

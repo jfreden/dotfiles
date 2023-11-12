@@ -37,9 +37,9 @@ typeset -gU cdpath fpath mailpath manpath path
 typeset -gUT INFOPATH infopath
 
 # Commonly used directories.
-dev="$HOME/Developer"
-com="$dev/com"
-pm="$dev/personal"
+devel="$HOME/Developer"
+com="$devel/com"
+pm="$devel/personal"
 as="$HOME/Library/Application Support"
 
 # path=($HOME/.cargo/bin /usr/local/opt/ruby/bin $path) # changing .zshenv doesn't work
@@ -92,12 +92,13 @@ fi
 unset gitssh
 
 
-if (( $+commands[code] )); then
-  export EDITOR=$commands[code]
-  export VISUAL=$commands[code]
-else
-  export EDITOR=$commands[vim]
-  export VISUAL=$commands[vim]
-fi
+#if (( $+commands[code] )); then
+#  export EDITOR=$commands[code]
+#  export VISUAL=$commands[code]
+#else
+#  export EDITOR=$commands[vim]
+#  export VISUAL=$commands[vim]
+#fi
 
 export SSH_AUTH_SOCK="${HOME}/.gnupg/S.gpg-agent.ssh"
+. "$HOME/.cargo/env"

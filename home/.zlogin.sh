@@ -23,3 +23,4 @@ if (( $+commands[fortune] )); then
   fortune -a
   print
 fi
+eval "$(/opt/homebrew/bin/brew shellenv)"

@@ -1,11 +1,10 @@
 [user]
-  name = Paul Miller
-  email = paul@paulmillr.com
-  signingkey = 46BEEF337A641ABB
+  name = Johannes Freden Jansson
+  email = johannes.freden@elastic.co
 [commit]
-  gpgsign = true
+  gpgsign = false
 [github]
-  user = paulmillr
+  user = jfreden
 [alias]
   discard = reset --hard HEAD
   ch = checkout
@@ -32,19 +31,16 @@
   ui = true
 
 [core]
-  editor = code
+#  editor = code
   excludesfile = ~/.gitignore
-  pager = diff-so-fancy | less --tabs=4 -RFX
+#  pager = diff-so-fancy | less --tabs=4 -RFX
 
 [format]
-  pretty = %Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)%an%Creset %C(bold yellow)%GK%Creset
-  graph = true
+#  pretty = %Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)%an%Creset %C(bold yellow)%GK%Creset
+#  graph = true
 
 [advice]
   statusHints = false
-
-[log]
-  abbrevCommit = true
 
 [mergetool]
   keepBackup = false
@@ -74,4 +70,7 @@
 [merge]
 	conflictstyle = diff3
 [init]
-	defaultBranch = main
+  defaultBranch = main
+[url "git@github.com:"]
+	insteadOf = https://github.com/
+

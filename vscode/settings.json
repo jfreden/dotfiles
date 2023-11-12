@@ -5,34 +5,26 @@
   "terminal.integrated.fontSize": 14,
   "editor.fontFamily": "Comic Mono, Fantasque Sans Mono, Monaco, 'Courier New', monospace",
   "editor.tabSize": 2,
-
   "editor.bracketPairColorization.enabled": true,
   "editor.minimap.enabled": false,
-
   // Trim whitespace
   "files.trimTrailingWhitespace": true,
-
   // Wrap lines at 100 characters
   "editor.wordWrap": "wordWrapColumn",
   "editor.wordWrapColumn": 100,
   "html.format.wrapLineLength": 100,
-
   // Prettier formatter: single quotes, 100 chars
   "prettier.singleQuote": true,
   "prettier.printWidth": 100,
-
   // git
   "git.confirmSync": false,
   "git.autorefresh": false,
-  "diffEditor.renderSideBySide": false,
-
   // Do not show files
   "files.exclude": {
     "**/lib": true,
     "**/node_modules": true,
     "**/package-lock.json": true
   },
-
   // F-off telemetry
   "telemetry.enableCrashReporter": false,
   "telemetry.enableTelemetry": false,
@@ -43,7 +35,6 @@
   "workbench.settings.enableNaturalLanguageSearch": false,
   "workbench.enableExperiments": false,
   "extensions.ignoreRecommendations": true,
-
   "explorer.openEditors.visible": 10,
   "explorer.confirmDelete": false,
   "javascript.implicitProjectConfig.checkJs": true,
@@ -70,9 +61,22 @@
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
-  "breadcrumbs.enabled": false,
   "workbench.preferredLightColorTheme": "Iceberg Light",
   "workbench.iconTheme": "Monokai Pro (Filter Machine) Monochrome Icons",
-  "git.enabled": false,
-  "workbench.colorTheme": "Iceberg Light"
+  "git.enabled": true,
+  "workbench.colorTheme": "Default Dark+",
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python"
+  },
+  "git.path": "/usr/bin/git",
+  "redhat.telemetry.enabled": true,
+  "[sql]": {
+    "editor.defaultFormatter": "adpyke.vscode-sql-formatter"
+  },
+  "workbench.editor.enablePreview": false,
+  "eslint.format.enable": true,
+  "editor.inlineSuggest.enabled": true,
+  "[java]": {
+    "editor.defaultFormatter": "redhat.java"
+  }
 }
