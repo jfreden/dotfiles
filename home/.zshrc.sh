@@ -394,10 +394,6 @@ alias ctl='systemctl'
 function nginx-edit() {
   sudo vim /etc/nginx/sites-available
 }
-eval "$(/opt/dev/venv/bin/dev-bare init bash)"
-eval "$(/opt/dev/venv/bin/dev-bare init zsh)"
-eval "$(shadowenv init zsh)"
-source ~/.iterm2_shell_integration.zsh
 
 
 # pnpm
@@ -408,6 +404,3 @@ case ":$PATH:" in
 esac
 # pnpm end
 #
-export PYENV_ROOT="$HOME/.pyenv"
-command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"

@@ -100,5 +100,3 @@ unset gitssh
 #  export VISUAL=$commands[vim]
 #fi
 
-export SSH_AUTH_SOCK="${HOME}/.gnupg/S.gpg-agent.ssh"
-. "$HOME/.cargo/env"
